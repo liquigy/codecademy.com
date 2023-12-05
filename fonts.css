@@ -1,0 +1,48 @@
+/*
+font-family: 'Abril Fatface', serif;
+font-family: 'Ephesis', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nova Square', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+.abril {
+    font-family: 'Abril Fatface', serif;
+}
+.ephesis {
+    font-family: 'Ephesis', cursive;
+}
+.kanit {
+    font-family: 'Kanit', sans-serif;
+}
+.merriweather {
+    font-family: 'Merriweather', serif;
+}
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.nova {
+    font-family: 'Nova Square', sans-serif;
+}
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.abril, .ephesis, .kanit, .merriweather, .montserrat, .nova, .oswald, .poppins, .roboto {
+    font-size: 40px;
+    color: #000;
+    background-color:rgba(231, 210, 210, 0.8);
+    display: inline-block;
+    width: auto;
+    height: 60px;
+    overflow: hidden;
+}

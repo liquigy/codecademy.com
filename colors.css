@@ -1,0 +1,105 @@
+.bgblack {
+    background-color: #000;
+}
+.bgnone {
+    background-color: transparent;
+}
+.bgwhite {
+    background-color: #fff;
+}
+.bgbeige {
+    background-color: Beige;
+}
+.bgblack {
+    background-color: #000;
+} 
+.bg333 {
+    background-color: #333;
+}
+.bg666 {
+    background-color: #666;
+}
+.bg999 {
+    background-color: #999;
+}
+.bg393636 {
+    background-color: #393636;
+}
+.bg4a4a4a {
+    background-color: #4A4A4A;
+}
+.bg565050 {
+    background-color: #565050;
+}
+.bg717171 {
+    background-color: #717171;
+}
+.bgred {
+    background-color: red;
+}
+.bgyellow {
+    background-color: yellow;
+}
+.bgrgbwhite {
+    background-color: rgb(228, 213, 213);
+}
+.bgrgblbrown {
+    background-color: rgb(87, 72, 72);
+}
+.bgbrown {
+    background-color: rgb(53, 49, 49);
+
+}
+.clrwhite {
+    color: #fff;
+}
+.clrbeige {
+    color: Beige;
+}
+.clrblack {
+    color: #000;
+} 
+.clr333 {
+    color: #333;
+}
+.clr666 {
+    color: #666;
+}
+.clr999 {
+    color: #999;
+}
+.clr393636 {
+    color: #393636;
+}
+.clr4a4a4a {
+    color: #4A4A4A;
+}
+.clr565050 {
+    color: #565050;
+}
+.clr717171 {
+    color: #717171;
+}
+.clrred {
+    color: red;
+}
+.clryellow {
+    color: yellow;
+}
+.clrrgbwhite {
+    color: rgb(228, 213, 213);
+}
+.clrrgblbrown {
+    color: rgb(87, 72, 72);
+}
+.clrbrown {
+    color: rgb(53, 49, 49);
+
+}
+.no-back-img {
+    width: 20px;
+    height: 20px;
+    background-image: url('./source/no-background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
