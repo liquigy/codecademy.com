@@ -48,8 +48,11 @@
 }
 .bgbrown {
     background-color: rgb(53, 49, 49);
-
 }
+.bgantiquewhite {
+    background-color: antiquewhite;
+}
+
 .clrwhite {
     color: #fff;
 }
@@ -94,7 +97,9 @@
 }
 .clrbrown {
     color: rgb(53, 49, 49);
-
+}
+.clrantiquewhite {
+    color: antiquewhite;
 }
 .no-back-img {
     width: 20px;
@@ -102,4 +107,52 @@
     background-image: url('./source/no-background.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+.borderwhite {
+    border: 1px solid #fff;
+}
+.borderbeige {
+    border: 1px solid Beige;
+}
+.borderblack {
+    border: 1px solid #000;
+} 
+.border333 {
+    border: 1px solid #333;
+}
+.border666 {
+    border: 1px solid #666;
+}
+.border999 {
+    border: 1px solid #999;
+}
+.border393636 {
+    border: 1px solid #393636;
+}
+.border4a4a4a {
+    border: 1px solid #4A4A4A;
+}
+.border565050 {
+    border: 1px solid #565050;
+}
+.border717171 {
+    border: 1px solid #717171;
+}
+.borderred {
+    border: 1px solid red;
+}
+.borderyellow {
+    border: 1px solid yellow;
+}
+.borderrgbwhite {
+    border: 1px solid rgb(228, 213, 213);
+}
+.borderrgblbrown {
+    border: 1px solid rgb(87, 72, 72);
+}
+.borderbrown {
+    border: 1px solid rgb(53, 49, 49);
+}
+.borderantiquewhite {
+    border: 1px solid antiquewhite;
 }
