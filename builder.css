@@ -3,30 +3,27 @@ body {
     background-image: url(./source/tile.png);
     color: beige;
 }
-
-.websitename {
-    font-family: 'Oswald', Courier, monospace;
-    font-size: 100px;
-    color: red;
-    font-weight: 900;
+.color-box {
+    margin: 5px;
+    border-radius: 5px;
 }
+
 .websitesub {
     position: relative;
     left: 200px;
     bottom: 40px;
-    font-family: 'Ephesis', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    color: antiquewhite;
     text-align: right;
-    font-size: 60px;
 }
 .mainheader {
-    font-size: 70px;
     text-transform: uppercase;
-    font-family: 'Nova Square', 'Arial Narrow', Arial, sans-serif;
-    color: #000;
-    background-color: rgba(228, 213, 213, 0.6);
     text-align: center;
+} 
+.main-header-memo {
+    padding: 35px;
+} 
+.main-header-memo p {
+    margin-bottom: 25px;
+    font-size: 25px;
 } 
 .colorbox li {
     margin: 10px;
@@ -46,7 +43,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color:rgba(228, 213, 213, 0.6);
-    background-image: url('./source/lego.jpg');
+    background-image: url('./source/legothin.jpg');
     background-position-y: center;
     background-position-x: center;
 }
@@ -58,14 +55,31 @@ body {
 .box {
     margin: 20px auto;
     width: 1150px;
-    background-color: rgba(228, 213, 213, 0.6);
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 45px;
 }
 .boxhead {
-    font-size: 30px;
-    background-color: rgba(53, 49, 49, 0.8);
-    color: white;
     text-align: center;
     min-width: 800px;
+}
+.google-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.google-link a {
+    text-decoration: none;
+    display: flex;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.google-link a:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: #393636;
 }
 
 .contents ul {
@@ -91,4 +105,38 @@ body {
 .html-colors {
     position: relative;
     top: 300px;
+}
+.header-div-banner {
+    position: relative;
+    top: 300px;
+}
+.mid-div-header {
+    position: relative;
+    top: 300px;
+}
+.builder-nav {
+    position: relative;
+    background-color: #393636;
+    ;
+}
+.banner {
+    top: 0;
+}
+.yellow-line-up-begins, .yellow-line-up-end {
+    height: 52px;
+    background-image: url('./source/yellow-line-up3.png');
+    background-repeat: repeat-x;
+    position: relative;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+} 
+.yellow-line-up-begins img, .yellow-line-up-end img {
+    height: 55%;
+    margin: 3px;
+}
+.yellow-line-up-end img {
+    transform:scaleY(-1)
 }
