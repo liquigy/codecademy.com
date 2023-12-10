@@ -9,40 +9,120 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
-
+@font-face { 
+    font-family: 'Abril Fatface'; 
+    src: url('./fonts/AbrilFatface-Regular.ttf') format('truetype') 
+}
 .abril {
     font-family: 'Abril Fatface', serif;
+}
+@font-face { 
+    font-family: 'Ephesis'; 
+    src: url('./fonts/Ephesis-Regular.ttf') format('truetype') 
 }
 .ephesis {
     font-family: 'Ephesis', cursive;
 }
+@font-face { 
+    font-family: 'Kanit'; 
+    src: url('./fonts/Kanit-Black.ttf') format('truetype') 
+}
 .kanit {
     font-family: 'Kanit', sans-serif;
+}
+@font-face { 
+    font-family: 'Merriweather'; 
+    src: url('./fonts/Merriweather-Black.ttf') format('truetype') 
 }
 .merriweather {
     font-family: 'Merriweather', serif;
 }
+@font-face { 
+    font-family: 'Montserrat'; 
+    src: url('./fonts/Montserrat-VariableFont_wght.ttf') format('truetype') 
+}
 .montserrat {
     font-family: 'Montserrat', sans-serif;
+}
+@font-face { 
+    font-family: 'Nova Square'; 
+    src: url('./fonts/NovaSquare-Regular.ttf') format('truetype') 
 }
 .nova {
     font-family: 'Nova Square', sans-serif;
 }
+@font-face { 
+    font-family: 'Oswald'; 
+    src: url('./fonts/Oswald-VariableFont_wght.ttf') format('truetype') 
+}
 .oswald {
     font-family: 'Oswald', sans-serif;
+}
+@font-face { 
+    font-family: 'Poppins'; 
+    src: url('./fonts/Poppins-Light.ttf') format('truetype') 
 }
 .poppins {
     font-family: 'Poppins', sans-serif;
 }
+@font-face { 
+    font-family: 'Roboto'; 
+    src: url('./fonts/Roboto-Black.ttf') format('truetype') 
+}
 .roboto {
     font-family: 'Roboto', sans-serif;
 }
-.abril, .ephesis, .kanit, .merriweather, .montserrat, .nova, .oswald, .poppins, .roboto {
+.font-size-20 {
+    font-size: 20px;
+}
+.font-size-30 {
+    font-size: 30px;
+}
+.font-size-40 {
     font-size: 40px;
-    color: #000;
-    background-color:rgba(231, 210, 210, 0.8);
-    display: inline-block;
-    width: auto;
-    height: 60px;
-    overflow: hidden;
+}
+.font-size-50 {
+    font-size: 50px;
+}
+.font-size-60 {
+    font-size: 60px;
+}
+.font-size-70 {
+    font-size: 70px;
+}
+.font-size-80 {
+    font-size: 80px;
+}
+.font-size-90 {
+    font-size: 90px;
+}
+.font-size-100 {
+    font-size: 100px;
+}
+.font-weight-400 {
+    font-weight: 400;
+}
+.font-weight-500 {
+    font-weight: 500;
+}
+.font-weight-600 {
+    font-weight: 600;
+}
+.font-weight-700 {
+    font-weight: 700;
+}
+.font-weight-800 {
+    font-weight: 800;
+}
+.font-weight-900 {
+    font-weight: 900;
+}
+.text-right { 
+    text-align: right;
+}
+.text-center { 
+    text-align: center;
+}
+.text-left { 
+    text-align: left;
 }
