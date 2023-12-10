@@ -1,9 +1,753 @@
+<!DOCTYPE html>
 <html>
-
+<head>
+  <title>WEBSITE BUILDER</title>
+  <link href="./styles.css" type="text/css" rel="stylesheet">
+  <link href="./builder.css" type="text/css" rel="stylesheet">
+  <link href="./colors.css" type="text/css" rel="stylesheet">
+  <link href="./fonts.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ephesis&family=Kanit:wght@300&family=Merriweather:ital@0;1&family=Montserrat:wght@400;600&family=Nova+Square&family=Oswald:wght@200&family=Poppins:wght@200&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
 <body>
-  <h1>Dante Vigilante</h1>
-  <p>Personal Profile</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <header>
+        
+        <div class="builder-banner">
+            <div class="oswald font-size-100 clrred">WEBSITE BUILDER</div> 
+            <div class="websitesub ephesis font-size-60 clrantiquewhite">design system</div> 
+        </div>
+        <nav><h2>WEBSITE BUILDER</h2>
+            <ul>
+                <li class="highlight"><a href="#" >HTML, Fonts and Colors</a></li>
+                <li class="highlight"><a href="#" >HEADER and NAV</a></li>
+                <li class="highlight"><a href="#" >MAIN</a></li>
+                <li class="highlight"><a href="#" >ARTICLE, SECTIONS, FIGURE, FIGCAPTIONs</a></li>
+                <li class="highlight"><a href="#" >FOOTER</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+   <div class="html-colors">
+        <div class="mainheader bgblack clrwhite poppins font-size-40">How to use</div>
+        <div class="main-header-memo bg393636 clrwhite poppins">
+            <p>This website contains a variety of selectors assigned to a specific color of background, text, border, font weight and size. There are also selectors to apply the specific font for any tag in HTML. Simply find the tag in the HTML and then add or replace the selector with the one that you desire.</p>
+            <p><span class="merriweather font-size-30">FONT EXAMPLE</span> &lt;span class="<span class="code">abril</span> <span class="code">font-size-30</span> <span class="code">font-weight-400</span>"&gt;  </p>
+            <p><span class="merriweather font-size-30">OUTPUT</span> <span class="abril font-size-30 font-weight-700 bgwhite clrblack" >This is the example of Abril Fatface font, size 30px, with 700 boldness</span></p>
+            <p><span class="merriweather font-size-30">COLOR EXAMPLE</span> &lt;span class="<span class="code">clryellow</span> <span class="code">bgred</span> <span class="code">borderblack</span>"&gt;  </p>
+            <p><span class="merriweather font-size-30">OUTPUT</span> <span class="clryellow bgred borderblack color-box" >This is the example of yellow text, red background, black border
+            </span></p>
+            <p>There is a template broken down below which you can yourself modify using the Website Builder guide.</p>
+            <p>If you wish to use the selectors on any other HTML be sure to link the font.css and colors.css in the head of your own HTML.</p>
+            <p>Have fun and enjoy coding!</p>
+            
+        </div>
+        <div class="box bgrgbwhite">
+            <div class="boxhead bgbrown font-size-30">fonts</div>
+            <div class="contents">
+                <table>
+                    <thead>
+                        <th class="bgblack">font name</th>
+                        <th class="bgblack">selector name</th>
+                        <th class="bgblack">example</th>
+                    </thead>
+                    <tbody>
+                        <tr class="pattern1">
+                            <td>Abril Fatface</td>
+                            <td>class="<span class="code">abril</span>"</td>
+                            <td class="abril font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td>Ephesis</td>
+                            <td>class="<span class="code">ephesis</span>"</td>
+                            <td class="ephesis font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td>Kanit</td>
+                            <td>class="<span class="code">kanit</span>"</td>
+                            <td class="kanit font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td>Merriweather</td>
+                            <td>class="<span class="code">merriweather</span>"</td>
+                            <td class="merriweather font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td>Montserrat</td>
+                            <td>class="<span class="code">montserrat</span>"</td>
+                            <td class="montserrat font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td>Nova Square</td>
+                            <td>class="<span class="code">nova</span>"</td>
+                            <td class="nova font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        
+                        <tr class="pattern1">
+                            <td>Oswald</td>
+                            <td>class="<span class="code">oswald</span>"</td>
+                            <td class="oswald font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td>Poppins</td>
+                            <td>class="<span class="code">poppins</span>"</td>
+                            <td class="poppins font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td>Roboto</td>
+                            <td>class="<span class="code">roboto</span>"</td>
+                            <td class="roboto font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                <div class="google-link"><a href="https://fonts.google.com/share?selection.family=Abril+Fatface|Ephesis|Kanit:wght@300|Merriweather:ital@0;1|Montserrat:wght@400;600|Nova+Square|Oswald:wght@200|Poppins:wght@200|Roboto:wght@300;400" target="_blank">Click here for the google list</a></div>
+                <div  class="section-col-2">
+                    <div class="button-column">
+                        <table>
+                            <thead>
+                                <th>Font Size</th>
+                                <th>Selector</th>
+                                <th>Example</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>20</td>
+                                    <td>class="<span class="code">font-size-20</span>"</td>
+                                    <td class="font-size-20">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>30</td>
+                                    <td>class="<span class="code">font-size-30</span>"</td>
+                                    <td class="font-size-30">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>40</td>
+                                    <td>class="<span class="code">font-size-40</span>"</td>
+                                    <td class="font-size-40">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>50</td>
+                                    <td>class="<span class="code">font-size-50</span>"</td>
+                                    <td class="font-size-50">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>60</td>
+                                    <td>class="<span class="code">font-size-60</span>"</td>
+                                    <td class="font-size-60">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>70</td>
+                                    <td>class="<span class="code">font-size-70</span>"</td>
+                                    <td class="font-size-70">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>80</td>
+                                    <td>class="<span class="code">font-size-80</span>"</td>
+                                    <td class="font-size-80">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>90</td>
+                                    <td>class="<span class="code">font-size-90</span>"</td>
+                                    <td class="font-size-90">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>100</td>
+                                    <td>class="<span class="code">font-size-100</span>"</td>
+                                    <td class="font-size-100">TEXT</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="button-column">
+                        <table>
+                            <thead>
+                                <th>Font Weight</th>
+                                <th>Selector</th>
+                                <th>Example</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>400</td>
+                                    <td>class="<span class="code">font-weight-400</span>"</td>
+                                    <td class="font-weight-400 font-size-30">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>500</td>
+                                    <td>class="<span class="code">font-weight-500</span>"</td>
+                                    <td class="font-weight-500 font-size-30">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>600</td>
+                                    <td>class="<span class="code">font-weight-600</span>"</td>
+                                    <td class="font-weight-600 font-size-30">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>700</td>
+                                    <td>class="<span class="code">font-weight-700</span>"</td>
+                                    <td class="font-weight-700 font-size-30">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>800</td>
+                                    <td>class="<span class="code">font-weight-800</span>"</td>
+                                    <td class="font-weight-800 font-size-30">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>900</td>
+                                    <td>class="<span class="code">font-weight-900</span>"</td>
+                                    <td class="font-weight-900 font-size-30">TEXT</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
+                        <table>
+                            <thead>
+                                <th>Text Position</th>
+                                <th>Selector</th>
+                                <th>Example</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>Left</td>
+                                    <td>class="<span class="code">text-left</span>"</td>
+                                    <td class="text-left">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>Center</td>
+                                    <td>class="<span class="code">text-center</span>"</td>
+                                    <td class="text-center">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>Right</td>
+                                    <td>class="<span class="code">text-right</span>"</td>
+                                    <td class="text-right">TEXT</td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="box bgrgbwhite">
+            <div class="boxhead bgbrown font-size-30">Colors</div>
+            <div class="contents">
+
+                <table>
+                    <thead>
+                        <th class="bgblack">Color</th>
+                        <th class="bgblack">Foreground selector</th>
+                        <th class="bgblack">Background selector</th>
+                        <th class="bgblack">Border Selector</th>
+                    </thead>
+                    <tbody>
+                        <tr class="pattern1">
+                            <td class="bgwhite clrblack">White #fff</td>
+                            <td>class="<span class="code">clrwhite</span>"</td>
+                            <td>class="<span class="code">bgwhite</span>"</td>
+                            <td>class="<span class="code">borderwhite</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bgbeige clrblack">Beige</td>
+                            <td>class="<span class="code">clrbeige</span>"</td>
+                            <td>class="<span class="code">bgbeige</span>"</td>
+                            <td>class="<span class="code">borderbeige</span>"</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td class="bgblack clrwhite">Black #000</td>
+                            <td>class="<span class="code">clrblack</span>"</td>
+                            <td>class="<span class="code">bgblack</span>"</td>
+                            <td>class="<span class="code">borderblack</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bg333 clrwhite">Grey #333</td>
+                            <td>class="<span class="code">clr333</span>"</td>
+                            <td>class="<span class="code">bg333</span>"</td>
+                            <td>class="<span class="code">border333</span>"</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td class="bg393636 clrwhite">#393636</td>
+                            <td>class="<span class="code">clr393636</span>"</td>
+                            <td>class="<span class="code">bg393636</span>"</td>
+                            <td>class="<span class="code">border393636</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bg4a4a4a clrwhite">#4A4A4A</td>
+                            <td>class="<span class="code">clr4a4a4a</span>"</td>
+                            <td>class="<span class="code">bg4a4a4a</span>"</td>
+                            <td>class="<span class="code">border4a4a4a</span>"</td>
+                        </tr>
+
+                        <tr class="pattern1">
+                            <td class="bg565050 clrwhite">#565050</td>
+                            <td>class="<span class="code">clr565050</span>"</td>
+                            <td>class="<span class="code">bg565050</span>"</td>
+                            <td>class="<span class="code">border565050</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bg666 clrwhite">Grey #666</td>
+                            <td>class="<span class="code">clr666</span>"</td>
+                            <td>class="<span class="code">bg666</span>"</td>
+                            <td>class="<span class="code">border666</span>"</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td class="bg717171 clrwhite">#717171</td>
+                            <td>class="<span class="code">clr717171</span>"</td>
+                            <td>class="<span class="code">bg717171</span>"</td>
+                            <td>class="<span class="code">border717171</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bg999 clrwhite">Grey #999</td>
+                            <td>class="<span class="code">clr999</span>"</td>
+                            <td>class="<span class="code">bg999</span>"</td>
+                            <td>class="<span class="code">border999</span>"</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td class="bgred clrblack">red</td>
+                            <td>class="<span class="code">clrred</span>"</td>
+                            <td>class="<span class="code">bgred</span>"</td>
+                            <td>class="<span class="code">borderred</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bgyellow clrblack">yellow</td>
+                            <td>class="<span class="code">clryellow</span>"</td>
+                            <td>class="<span class="code">bgyellow</span>"</td>
+                            <td>class="<span class="code">borderyellow</span>"</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td class="bgrgbwhite clrblack">White/grey rgb(228, 213, 213)</td>
+                            <td>class="<span class="code">clrrgbwhite</span>"</td>
+                            <td>class="<span class="code">bgrgbwhite</span>"</td>
+                            <td>class="<span class="code">borderrgbwhite</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bgrgblbrown clrwhite">Light Brown rgb(87, 72, 72)</td>
+                            <td>class="<span class="code">clrrgblbrown</span>"</td>
+                            <td>class="<span class="code">bgrgblbrown</span>"</td>
+                            <td>class="<span class="code">borderrgblbrown</span>"</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td class="bgbrown clrwhite">Brown rgb(53, 49, 49)</td>
+                            <td>class="<span class="code">clrbrown</span>"</td>
+                            <td>class="<span class="code">bgbrown</span>"</td>
+                            <td>class="<span class="code">borderbrown</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bgantiquewhite clrblack">Antique White</td>
+                            <td>class="<span class="code">clrantiquewhite</span>"</td>
+                            <td>class="<span class="code">bgantiquewhite</span>"</td>
+                            <td>class="<span class="code">borderantiquewhite</span>"</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+                <ul class="colorbox">
+                    <li class="bgwhite clrblack">White #fff</li>
+                    <li class="bgbeige clrblack">Beige </li>
+                    <li class="bgblack clrwhite">Black #000</li>
+                    <li class="bg333 clrwhite">Grey #333</li>
+                    <li class="bg393636 clrwhite">#393636</li>
+                    <li class="bg4a4a4a clrwhite">#4A4A4A</li>
+                    <li class="bg565050 clrwhite">#565050</li>
+                    <li class="bg666 clrwhite">Grey #666</li>
+                    <li class="bg717171 clrwhite">#717171</li>
+                    <li class="bg999 clrwhite">Grey #999</li>
+                    <li class="bgred clrblack">red</li>
+                    <li class="bgyellow clrblack">yellow</li>
+                    <li class="bgrgbwhite clrblack borderblack">White/grey rgb(228, 213, 213)</li>
+                    <li class="bgrgblbrown clrblack">Light Brown rgb(87, 72, 72)</li>
+                    <li class="bgbrown clrwhite">Brown rgb(53, 49, 49)</li>
+                    <li class="bgantiquewhite clrblack">Antique White</li>
+                </ul>
+                <table class="bgnone">
+                    <thead>
+                        <th class="bgblack" colspan="17">
+                            foreground
+                        </th>
+                    </thead>
+                    <tbody>
+                       
+                        <tr>
+                            <td class="bgblack vertical" rowspan="16">
+                                Background
+                            </td>
+                            <td class="no-back-img"></td>
+                            <td class="bgwhite clrblack">White #fff</td>
+                            <td class="bgwhite clrblack">Beige </td>
+                            <td class="bgwhite clrblack">Black #000</td>
+                            <td class="bgwhite clrblack">Grey #333</td>
+                            <td class="bgwhite clrblack">Grey #666</td>
+                            <td class="bgwhite clrblack">Grey #999</td>
+                            <td class="bgwhite clrblack">#393636</td>
+                            <td class="bgwhite clrblack">#4A4A4A</td>
+                            <td class="bgwhite clrblack">#565050</td>
+                            <td class="bgwhite clrblack">#717171</td>
+                            <td class="bgwhite clrblack">red</td>
+                            <td class="bgwhite clrblack">yellow</td>
+                            <td class="bgwhite clrblack">White rgb(228, 213, 213)</td>
+                            <td class="bgwhite clrblack">Light Brown rgb(87, 72, 72)</td>
+                            <td class="bgwhite clrblack">Brown rgb(53, 49, 49)</td>
+                        </tr>
+                        <tr>
+                            <td class="bgwhite clrblack">White #fff</td>
+                            <td class="bgwhite clrwhite">text</td>
+                            <td class="bgwhite clrbeige">text </td>
+                            <td class="bgwhite clrblack">text</td>
+                            <td class="bgwhite clr333">text</td>
+                            <td class="bgwhite clr666">text</td>
+                            <td class="bgwhite clr999">text</td>
+                            <td class="bgwhite clr393636">text</td>
+                            <td class="bgwhite clr4a4a4a">text</td>
+                            <td class="bgwhite clr565050">text</td>
+                            <td class="bgwhite clr717171">text</td>
+                            <td class="bgwhite clrred">text</td>
+                            <td class="bgwhite clryellow">text</td>
+                            <td class="bgwhite clrrgbwhite">text</td>
+                            <td class="bgwhite clrrgblbrown">text</td>
+                            <td class="bgwhite clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bgbeige clrblack">Beige</td>
+                            <td class="bgbeige clrwhite">text</td>
+                            <td class="bgbeige clrbeige">text </td>
+                            <td class="bgbeige clrblack">text</td>
+                            <td class="bgbeige clr333">text</td>
+                            <td class="bgbeige clr666">text</td>
+                            <td class="bgbeige clr999">text</td>
+                            <td class="bgbeige clr393636">text</td>
+                            <td class="bgbeige clr4a4a4a">text</td>
+                            <td class="bgbeige clr565050">text</td>
+                            <td class="bgbeige clr717171">text</td>
+                            <td class="bgbeige clrred">text</td>
+                            <td class="bgbeige clryellow">text</td>
+                            <td class="bgbeige clrrgbwhite">text</td>
+                            <td class="bgbeige clrrgblbrown">text</td>
+                            <td class="bgbeige clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bgblack">Black</td>
+                            <td class="bgblack clrwhite">text</td>
+                            <td class="bgblack clrbeige">text </td>
+                            <td class="bgblack clrblack">text</td>
+                            <td class="bgblack clr333">text</td>
+                            <td class="bgblack clr666">text</td>
+                            <td class="bgblack clr999">text</td>
+                            <td class="bgblack clr393636">text</td>
+                            <td class="bgblack clr4a4a4a">text</td>
+                            <td class="bgblack clr565050">text</td>
+                            <td class="bgblack clr717171">text</td>
+                            <td class="bgblack clrred">text</td>
+                            <td class="bgblack clryellow">text</td>
+                            <td class="bgblack clrrgbwhite">text</td>
+                            <td class="bgblack clrrgblbrown">text</td>
+                            <td class="bgblack clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bg333">Grey #333</td>
+                            <td class="bg333 clrwhite">text</td>
+                            <td class="bg333 clrbeige">text </td>
+                            <td class="bg333 clrblack">text</td>
+                            <td class="bg333 clr333">text</td>
+                            <td class="bg333 clr666">text</td>
+                            <td class="bg333 clr999">text</td>
+                            <td class="bg333 clr393636">text</td>
+                            <td class="bg333 clr4a4a4a">text</td>
+                            <td class="bg333 clr565050">text</td>
+                            <td class="bg333 clr717171">text</td>
+                            <td class="bg333 clrred">text</td>
+                            <td class="bg333 clryellow">text</td>
+                            <td class="bg333 clrrgbwhite">text</td>
+                            <td class="bg333 clrrgblbrown">text</td>
+                            <td class="bg333 clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bg666">Grey #666</td>
+                            <td class="bg666 clrwhite">text</td>
+                            <td class="bg666 clrbeige">text </td>
+                            <td class="bg666 clrblack">text</td>
+                            <td class="bg666 clr333">text</td>
+                            <td class="bg666 clr666">text</td>
+                            <td class="bg666 clr999">text</td>
+                            <td class="bg666 clr393636">text</td>
+                            <td class="bg666 clr4a4a4a">text</td>
+                            <td class="bg666 clr565050">text</td>
+                            <td class="bg666 clr717171">text</td>
+                            <td class="bg666 clrred">text</td>
+                            <td class="bg666 clryellow">text</td>
+                            <td class="bg666 clrrgbwhite">text</td>
+                            <td class="bg666 clrrgblbrown">text</td>
+                            <td class="bg666 clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bg999">Grey #999</td>
+                            <td class="bg999 clrwhite">text</td>
+                            <td class="bg999 clrbeige">text </td>
+                            <td class="bg999 clrblack">text</td>
+                            <td class="bg999 clr333">text</td>
+                            <td class="bg999 clr666">text</td>
+                            <td class="bg999 clr999">text</td>
+                            <td class="bg999 clr393636">text</td>
+                            <td class="bg999 clr4a4a4a">text</td>
+                            <td class="bg999 clr565050">text</td>
+                            <td class="bg999 clr717171">text</td>
+                            <td class="bg999 clrred">text</td>
+                            <td class="bg999 clryellow">text</td>
+                            <td class="bg999 clrrgbwhite">text</td>
+                            <td class="bg999 clrrgblbrown">text</td>
+                            <td class="bg999 clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bg393636">#393636</td>
+                            <td class="bg393636 clrwhite">text</td>
+                            <td class="bg393636 clrbeige">text </td>
+                            <td class="bg393636 clrblack">text</td>
+                            <td class="bg393636 clr333">text</td>
+                            <td class="bg393636 clr666">text</td>
+                            <td class="bg393636 clr999">text</td>
+                            <td class="bg393636 clr393636">text</td>
+                            <td class="bg393636 clr4a4a4a">text</td>
+                            <td class="bg393636 clr565050">text</td>
+                            <td class="bg393636 clr717171">text</td>
+                            <td class="bg393636 clrred">text</td>
+                            <td class="bg393636 clryellow">text</td>
+                            <td class="bg393636 clrrgbwhite">text</td>
+                            <td class="bg393636 clrrgblbrown">text</td>
+                            <td class="bg393636 clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bg4a4a4a">#4A4A4A</td>
+                            <td class="bg4a4a4a clrwhite">text</td>
+                            <td class="bg4a4a4a clrbeige">text </td>
+                            <td class="bg4a4a4a clrblack">text</td>
+                            <td class="bg4a4a4a clr333">text</td>
+                            <td class="bg4a4a4a clr666">text</td>
+                            <td class="bg4a4a4a clr999">text</td>
+                            <td class="bg4a4a4a clr393636">text</td>
+                            <td class="bg4a4a4a clr4a4a4a">text</td>
+                            <td class="bg4a4a4a clr565050">text</td>
+                            <td class="bg4a4a4a clr717171">text</td>
+                            <td class="bg4a4a4a clrred">text</td>
+                            <td class="bg4a4a4a clryellow">text</td>
+                            <td class="bg4a4a4a clrrgbwhite">text</td>
+                            <td class="bg4a4a4a clrrgblbrown">text</td>
+                            <td class="bg4a4a4a clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bg565050">#565050</td>
+                            <td class="bg565050 clrwhite">text</td>
+                            <td class="bg565050 clrbeige">text </td>
+                            <td class="bg565050 clrblack">text</td>
+                            <td class="bg565050 clr333">text</td>
+                            <td class="bg565050 clr666">text</td>
+                            <td class="bg565050 clr999">text</td>
+                            <td class="bg565050 clr393636">text</td>
+                            <td class="bg565050 clr4a4a4a">text</td>
+                            <td class="bg565050 clr565050">text</td>
+                            <td class="bg565050 clr717171">text</td>
+                            <td class="bg565050 clrred">text</td>
+                            <td class="bg565050 clryellow">text</td>
+                            <td class="bg565050 clrrgbwhite">text</td>
+                            <td class="bg565050 clrrgblbrown">text</td>
+                            <td class="bg565050 clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bg717171">#717171</td>
+                            <td class="bg717171 clrwhite">text</td>
+                            <td class="bg717171 clrbeige">text </td>
+                            <td class="bg717171 clrblack">text</td>
+                            <td class="bg717171 clr333">text</td>
+                            <td class="bg717171 clr666">text</td>
+                            <td class="bg717171 clr999">text</td>
+                            <td class="bg717171 clr393636">text</td>
+                            <td class="bg717171 clr4a4a4a">text</td>
+                            <td class="bg717171 clr565050">text</td>
+                            <td class="bg717171 clr717171">text</td>
+                            <td class="bg717171 clrred">text</td>
+                            <td class="bg717171 clryellow">text</td>
+                            <td class="bg717171 clrrgbwhite">text</td>
+                            <td class="bg717171 clrrgblbrown">text</td>
+                            <td class="bg717171 clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bgred clrblack">red</td>
+                            <td class="bgred clrwhite">text</td>
+                            <td class="bgred clrbeige">text </td>
+                            <td class="bgred clrblack">text</td>
+                            <td class="bgred clr333">text</td>
+                            <td class="bgred clr666">text</td>
+                            <td class="bgred clr999">text</td>
+                            <td class="bgred clr393636">text</td>
+                            <td class="bgred clr4a4a4a">text</td>
+                            <td class="bgred clr565050">text</td>
+                            <td class="bgred clr717171">text</td>
+                            <td class="bgred clrred">text</td>
+                            <td class="bgred clryellow">text</td>
+                            <td class="bgred clrrgbwhite">text</td>
+                            <td class="bgred clrrgblbrown">text</td>
+                            <td class="bgred clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bgyellow clrblack">yellow</td>
+                            <td class="bgyellow clrwhite">text</td>
+                            <td class="bgyellow clrbeige">text </td>
+                            <td class="bgyellow clrblack">text</td>
+                            <td class="bgyellow clr333">text</td>
+                            <td class="bgyellow clr666">text</td>
+                            <td class="bgyellow clr999">text</td>
+                            <td class="bgyellow clr393636">text</td>
+                            <td class="bgyellow clr4a4a4a">text</td>
+                            <td class="bgyellow clr565050">text</td>
+                            <td class="bgyellow clr717171">text</td>
+                            <td class="bgyellow clrred">text</td>
+                            <td class="bgyellow clryellow">text</td>
+                            <td class="bgyellow clrrgbwhite">text</td>
+                            <td class="bgyellow clrrgblbrown">text</td>
+                            <td class="bgyellow clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bgrgbwhite clrblack">White rgb(228, 213, 213)</td>
+                            <td class="bgrgbwhite clrwhite">text</td>
+                            <td class="bgrgbwhite clrbeige">text </td>
+                            <td class="bgrgbwhite clrblack">text</td>
+                            <td class="bgrgbwhite clr333">text</td>
+                            <td class="bgrgbwhite clr666">text</td>
+                            <td class="bgrgbwhite clr999">text</td>
+                            <td class="bgrgbwhite clr393636">text</td>
+                            <td class="bgrgbwhite clr4a4a4a">text</td>
+                            <td class="bgrgbwhite clr565050">text</td>
+                            <td class="bgrgbwhite clr717171">text</td>
+                            <td class="bgrgbwhite clrred">text</td>
+                            <td class="bgrgbwhite clryellow">text</td>
+                            <td class="bgrgbwhite clrrgbwhite">text</td>
+                            <td class="bgrgbwhite clrrgblbrown">text</td>
+                            <td class="bgrgbwhite clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bgrgblbrown">Light Brown rgb(87, 72, 72)</td>
+                            <td class="bgrgblbrown clrwhite">text</td>
+                            <td class="bgrgblbrown clrbeige">text </td>
+                            <td class="bgrgblbrown clrblack">text</td>
+                            <td class="bgrgblbrown clr333">text</td>
+                            <td class="bgrgblbrown clr666">text</td>
+                            <td class="bgrgblbrown clr999">text</td>
+                            <td class="bgrgblbrown clr393636">text</td>
+                            <td class="bgrgblbrown clr4a4a4a">text</td>
+                            <td class="bgrgblbrown clr565050">text</td>
+                            <td class="bgrgblbrown clr717171">text</td>
+                            <td class="bgrgblbrown clrred">text</td>
+                            <td class="bgrgblbrown clryellow">text</td>
+                            <td class="bgrgblbrown clrrgbwhite">text</td>
+                            <td class="bgrgblbrown clrrgblbrown">text</td>
+                            <td class="bgrgblbrown clrbrown">text</td>
+                        </tr>
+                        <tr>
+                            <td class="bgbrown">Brown rgb(53, 49, 49)</td>
+                            <td class="bgbrown clrwhite">text</td>
+                            <td class="bgbrown clrbeige">text </td>
+                            <td class="bgbrown clrblack">text</td>
+                            <td class="bgbrown clr333">text</td>
+                            <td class="bgbrown clr666">text</td>
+                            <td class="bgbrown clr999">text</td>
+                            <td class="bgbrown clr393636">text</td>
+                            <td class="bgbrown clr4a4a4a">text</td>
+                            <td class="bgbrown clr565050">text</td>
+                            <td class="bgbrown clr717171">text</td>
+                            <td class="bgbrown clrred">text</td>
+                            <td class="bgbrown clryellow">text</td>
+                            <td class="bgbrown clrrgbwhite">text</td>
+                            <td class="bgbrown clrrgblbrown">text</td>
+                            <td class="bgbrown clrbrown">text</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+    <div class="mid-div-header">
+        <div class="mainheader bgblack clrwhite poppins font-size-40">Header, Nav and Banner</div>
+        <div class="yellow-line-up-begins">
+            <img src="./source/yellow-arrow.png" />
+            <img src="./source/yellow-arrow.png" />
+            <img src="./source/yellow-arrow.png" />
+            TEMPLATE STARTS HERE
+            <img src="./source/yellow-arrow.png" />
+            <img src="./source/yellow-arrow.png" />
+            <img src="./source/yellow-arrow.png" />
+        </div>
+            <div class="bg393636">
+                <div class="top-head bgblack">
+                    <div class="top-logo clrwhite montserrat font-weight-700"> Website Template
+                    </div>
+                    <div class="top-links"> 
+                        <ul>
+                            <li><a href="#">link1</a></li>
+                            <li><a href="#">link2</a></li>
+                            <li><a href="#">link3</a></li>
+                            <li><a href="#">link4</a></li>
+                            <li><a href="#">link5</a></li>
+                            <li><a href="#">link6</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mid-head">
+                    <ul class="mid-head-links">
+                        <li><a href="#">link1</a></li>
+                        <li><a href="#">link2</a></li>
+                        <li><a href="#">link3</a></li>
+                        <li><a href="#">link4</a></li>
+                        <li><a href="#">link5</a></li>
+                        <li><a href="#">link6</a></li>
+                    </ul>
+                </div>
+                <div class="bgwhite">
+                    <ul class="bottom-head-links">
+                       <li class="breadcrumb"><a href="#" >Home</a></li>
+                       <li class="breadcrumb"><a href="#" >step 1</a></li>
+                       <li class="breadcrumb"><a href="#" >step 2</a></li>
+                       <li class="breadcrumb"><a href="#" >step 3</a></li>
+                        <li class="breadcrumb"><a href="#" >step 4</a></li>
+                     </ul>
+                </div>
+            </nav>
+            <div  id="backtop" class="banner borderblack">
+                <div class="banner-head poppins font-size-30">DESIGN INDUSTRY</div> 
+                <div class="banner-mid"><h1 class="text-right">PRODUCTS</h1> </div> 
+                <div class="banner-bottom1">
+                    <p>We provide the best service that it can be</p>
+                </div> 
+                <div class="banner-bottom2">
+                    <p>Satisfation guaranteed</p>
+                </div> 
+            </div>
+            <div class="yellow-line-up-end">
+                <img src="./source/yellow-arrow.png" />
+                <img src="./source/yellow-arrow.png" />
+                <img src="./source/yellow-arrow.png" />
+                TEMPLATE ENDS HERE
+                <img src="./source/yellow-arrow.png" />
+                <img src="./source/yellow-arrow.png" />
+                <img src="./source/yellow-arrow.png" />
+            </div>
+        </div>
+        
+        <div class="main-header-memo bg393636 clrwhite poppins">
+            
+            <p><h3 class="ephesis font-size-30">Current</h3> website contains a variety of selectors assigned to a specific color of background, text, border, font weight and size. There are also selectors to apply the specific font for any tag in HTML. Simply find the tag in the HTML and then add or replace the selector with the one that you desire.</p>
+            <p><span class="merriweather font-size-30">FONT EXAMPLE</span> &lt;span class="<span class="code">abril</span> <span class="code">font-size-30</span> <span class="code">font-weight-400</span>"&gt;  </p>
+            <p><span class="merriweather font-size-30">OUTPUT</span> <span class="abril font-size-30 font-weight-700 bgwhite clrblack" >This is the example of Abril Fatface font, size 30px, with 700 boldness</span></p>
+            <p><span class="merriweather font-size-30">COLOR EXAMPLE</span> &lt;span class="<span class="code">clryellow</span> <span class="code">bgred</span> <span class="code">borderblack</span>"&gt;  </p>
+            <p><span class="merriweather font-size-30">OUTPUT</span> <span class="clryellow bgred borderblack color-box" >This is the example of yellow text, red background, black border
+            </span></p>
+            <p>There is a template broken down below which you can yourself modify using the Website Builder guide.</p>
+            <p>If you wish to use the selectors on any other HTML be sure to link the font.css and colors.css in the head of your own HTML.</p>
+            <p>Have fun and enjoy coding!</p>
+            
+        </div>
+    </div>
+   
+</body>
 </html>
