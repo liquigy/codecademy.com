@@ -18,18 +18,16 @@ body {
     text-transform: uppercase;
     text-align: center;
 } 
-.main-header-memo {
-    padding: 35px;
-} 
-.main-header-memo p {
-    margin-bottom: 25px;
-    font-size: 25px;
-} 
+
 .colorbox li {
     margin: 10px;
     padding: 30px;
     display: inline-block;
     text-align: center;
+    border-radius: 50px;
+}
+.colorbox {
+    padding: 7px;
     border-radius: 50px;
 }
 .builder-banner {
@@ -59,6 +57,9 @@ body {
     margin-top: 20px;
     margin-bottom: 45px;
 }
+.box2 {
+    padding: 35px;
+}
 .boxhead {
     text-align: center;
     min-width: 800px;
@@ -81,7 +82,11 @@ body {
     color: white;
     background-color: #393636;
 }
-
+.table-colors {
+    max-width: 1060px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
 .contents ul {
     list-style: none;
 }
