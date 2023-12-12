@@ -30,16 +30,16 @@
     </header>
    <div class="html-colors">
         <div class="mainheader bgblack clrwhite poppins font-size-40">How to use</div>
-        <div class="main-header-memo bg393636 clrwhite poppins">
-            <p>This website contains a variety of selectors assigned to a specific color of background, text, border, font weight and size. There are also selectors to apply the specific font for any tag in HTML. Simply find the tag in the HTML and then add or replace the selector with the one that you desire.</p>
-            <p><span class="merriweather font-size-30">FONT EXAMPLE</span> &lt;span class="<span class="code">abril</span> <span class="code">font-size-30</span> <span class="code">font-weight-400</span>"&gt;  </p>
-            <p><span class="merriweather font-size-30">OUTPUT</span> <span class="abril font-size-30 font-weight-700 bgwhite clrblack" >This is the example of Abril Fatface font, size 30px, with 700 boldness</span></p>
-            <p><span class="merriweather font-size-30">COLOR EXAMPLE</span> &lt;span class="<span class="code">clryellow</span> <span class="code">bgred</span> <span class="code">borderblack</span>"&gt;  </p>
-            <p><span class="merriweather font-size-30">OUTPUT</span> <span class="clryellow bgred borderblack color-box" >This is the example of yellow text, red background, black border
+        <div class="box2 bg393636 clrwhite poppins font-size-20">
+            <p class="margin10">This website contains a variety of selectors assigned to a specific color of background, text, border, font weight and size. There are also selectors to apply the specific font for any tag in HTML. Simply find the tag in the HTML and then add or replace the selector with the one that you desire.</p>
+            <p class="margin10"><span class="merriweather font-size-30">FONT EXAMPLE</span> &lt;span class="<span class="code">abril</span> <span class="code">font-size-30</span> <span class="code">font-weight-400</span>"&gt;  </p>
+            <p class="margin10"><span class="merriweather font-size-30">OUTPUT</span> <span class="abril font-size-30 font-weight-700 bgwhite clrblack" >This is the example of Abril Fatface font, size 30px, with 700 boldness</span></p>
+            <p class="margin10"><span class="merriweather font-size-30">COLOR EXAMPLE</span> &lt;span class="<span class="code">clryellow</span> <span class="code">bgred</span> <span class="code">borderblack</span>"&gt;  </p>
+            <p class="margin10"><span class="merriweather font-size-30">OUTPUT</span> <span class="clryellow bgred borderblack color-box" >This is the example of yellow text, red background, black border
             </span></p>
-            <p>There is a template broken down below which you can yourself modify using the Website Builder guide.</p>
-            <p>If you wish to use the selectors on any other HTML be sure to link the font.css and colors.css in the head of your own HTML.</p>
-            <p>Have fun and enjoy coding!</p>
+            <p class="margin10">There is a template broken down below which you can yourself modify using the Website Builder guide.</p>
+            <p class="margin10">If you wish to use the selectors on any other HTML be sure to link the font.css and colors.css in the head of your own HTML.</p>
+            <p class="margin10">Have fun and enjoy coding!</p>
             
         </div>
         <div class="box bgrgbwhite">
@@ -102,8 +102,8 @@
                     
                 </table>
                 <div class="google-link"><a href="https://fonts.google.com/share?selection.family=Abril+Fatface|Ephesis|Kanit:wght@300|Merriweather:ital@0;1|Montserrat:wght@400;600|Nova+Square|Oswald:wght@200|Poppins:wght@200|Roboto:wght@300;400" target="_blank">Click here for the google list</a></div>
-                <div  class="section-col-2">
-                    <div class="button-column">
+                <div  class="flex-columns-justification">
+                    <div class="column50per margin10">
                         <table>
                             <thead>
                                 <th>Font Size</th>
@@ -160,7 +160,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="button-column">
+                    <div class="column50per">
                         <table>
                             <thead>
                                 <th>Font Weight</th>
@@ -362,18 +362,16 @@
                     <li class="bgbrown clrwhite">Brown rgb(53, 49, 49)</li>
                     <li class="bgantiquewhite clrblack">Antique White</li>
                 </ul>
-                <table class="bgnone">
+                <table class="bgnone table-colors">
                     <thead>
                         <th class="bgblack" colspan="17">
-                            foreground
+                            foreground/background intersection board
                         </th>
                     </thead>
                     <tbody>
                        
                         <tr>
-                            <td class="bgblack vertical" rowspan="16">
-                                Background
-                            </td>
+                            
                             <td class="no-back-img"></td>
                             <td class="bgwhite clrblack">White #fff</td>
                             <td class="bgwhite clrblack">Beige </td>
@@ -713,7 +711,7 @@
                      </ul>
                 </div>
             </nav>
-            <div  id="backtop" class="banner borderblack">
+            <div  id="backtop" class="banner borderblack clrblack">
                 <div class="banner-head poppins font-size-30">DESIGN INDUSTRY</div> 
                 <div class="banner-mid"><h1 class="text-right">PRODUCTS</h1> </div> 
                 <div class="banner-bottom1">
@@ -733,18 +731,124 @@
                 <img src="./source/yellow-arrow.png" />
             </div>
         </div>
-        
-        <div class="main-header-memo bg393636 clrwhite poppins">
+        <div class="flex-columns-justification bg393636 clrwhite poppins font-size-20 justify-normal">
+            <table class="bgnone min-width860">
+                <thead>
+                    <th class="bgnone ephesis font-size-40 width250">Tag/Selector</th>
+                    <th class="bgnone ephesis font-size-40 width200">Font </th>
+                    <th class="bgnone ephesis font-size-40 width200">Text Color</th>
+                    <th class="bgnone ephesis font-size-40 width200">Background</th>
+                    <th class="bgnone ephesis font-size-40 width200">Other</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;nav class="<span class="code">bg393636</span>" &gt;</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Default Font</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Default Text Color</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="colorbox borderwhite bg393636">bg393636</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">N/A</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="top-head <span class="code">bgblack</span>" &gt;</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Default Font</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Default Text Color</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="colorbox borderwhite bgblack">bgblack</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">N/A</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="top-logo <span class="code">clrwhite montserrat font-weight-700</span> "&gt;</p></td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="montserrat">Montserrat</span></p></td>
+                        <td class="text-center" > 
+                            <p class="margin10"><span class="colorbox borderblack bgwhite clrblack">white</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Default Background Color</p></td>
+                        <td class="text-center" >
+                            <p class="margin10 font-weight-700">font-weight-700</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="mid-head" &gt;</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Default Font</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Default Text Color</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Default Background Color</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">N/A</p>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="<span class="code">bgwhite</span>" &gt;</p>
+                            <p class="font-weight-700">breadcrumbs</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Default Font</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Default Text Color</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="colorbox borderblack bgwhite clrblack">white</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">N/A</p>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="banner <span class="code">borderblack</span>" &gt;</p>
+                            <p class="font-weight-700">breadcrumbs</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Default Font</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Default Text Color</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="colorbox borderblack bgwhite clrblack">white</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">N/A</p>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
             
-            <p><h3 class="ephesis font-size-30">Current</h3> website contains a variety of selectors assigned to a specific color of background, text, border, font weight and size. There are also selectors to apply the specific font for any tag in HTML. Simply find the tag in the HTML and then add or replace the selector with the one that you desire.</p>
-            <p><span class="merriweather font-size-30">FONT EXAMPLE</span> &lt;span class="<span class="code">abril</span> <span class="code">font-size-30</span> <span class="code">font-weight-400</span>"&gt;  </p>
-            <p><span class="merriweather font-size-30">OUTPUT</span> <span class="abril font-size-30 font-weight-700 bgwhite clrblack" >This is the example of Abril Fatface font, size 30px, with 700 boldness</span></p>
-            <p><span class="merriweather font-size-30">COLOR EXAMPLE</span> &lt;span class="<span class="code">clryellow</span> <span class="code">bgred</span> <span class="code">borderblack</span>"&gt;  </p>
-            <p><span class="merriweather font-size-30">OUTPUT</span> <span class="clryellow bgred borderblack color-box" >This is the example of yellow text, red background, black border
-            </span></p>
-            <p>There is a template broken down below which you can yourself modify using the Website Builder guide.</p>
-            <p>If you wish to use the selectors on any other HTML be sure to link the font.css and colors.css in the head of your own HTML.</p>
-            <p>Have fun and enjoy coding!</p>
+            
             
         </div>
     </div>
