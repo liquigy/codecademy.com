@@ -70,14 +70,14 @@ body {
     align-items: center;
     margin-bottom: 15px;
 }
-.google-link a {
+.external-link a {
     text-decoration: none;
     display: flex;
     padding: 20px;
     border: 1px solid #000;
     border-radius: 10px;
 }
-.google-link a:hover{
+.external-link a:hover{
     text-decoration: underline;
     color: white;
     background-color: #393636;
