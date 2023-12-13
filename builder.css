@@ -2,6 +2,7 @@ body {
     background-repeat: repeat;
     background-image: url(./source/tile.png);
     color: beige;
+    background-color: #393636;
 }
 .color-box {
     margin: 5px;
