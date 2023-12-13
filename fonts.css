@@ -25,14 +25,14 @@ font-family: 'Roboto', sans-serif;
 }
 @font-face { 
     font-family: 'Kanit'; 
-    src: url('./fonts/Kanit-Black.ttf') format('truetype') 
+    src: url('./fonts/Kanit-Light.ttf') format('truetype') 
 }
 .kanit {
     font-family: 'Kanit', sans-serif;
 }
 @font-face { 
     font-family: 'Merriweather'; 
-    src: url('./fonts/Merriweather-Black.ttf') format('truetype') 
+    src: url('./fonts/Merriweather-Light.ttf') format('truetype') 
 }
 .merriweather {
     font-family: 'Merriweather', serif;
@@ -67,7 +67,7 @@ font-family: 'Roboto', sans-serif;
 }
 @font-face { 
     font-family: 'Roboto'; 
-    src: url('./fonts/Roboto-Black.ttf') format('truetype') 
+    src: url('./fonts/Roboto-Light.ttf') format('truetype') 
 }
 .roboto {
     font-family: 'Roboto', sans-serif;
