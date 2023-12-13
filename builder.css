@@ -51,8 +51,7 @@ body {
     background-color: transparent;
 }
 .box {
-    margin: 20px auto;
-    width: 1150px;
+    margin: 20px;
     padding-bottom: 5px;
     margin-top: 20px;
     margin-bottom: 45px;
@@ -64,7 +63,7 @@ body {
     text-align: center;
     min-width: 800px;
 }
-.google-link {
+.external-link {
     display: flex;
     justify-content: center;
     align-items: center;
