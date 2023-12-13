@@ -326,18 +326,17 @@ footer .footer-1 {
 
 .dv-logo-parent {
     display: flex;
-    width: 25%;
+    width: 30%;
     float: left;
 }
 .dv-links-parent {
     display: flex;
-    width: 75%;
+    width: 64%;
     flex-direction: column;
 
 }
 .dv-logo {
     background-image: url('./source/DV-logo.png');
-    background-size: 100%;
     width: 335px;
     height: 250px;
     background-repeat: no-repeat;
