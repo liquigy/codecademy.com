@@ -126,3 +126,12 @@ font-family: 'Roboto', sans-serif;
 .text-left { 
     text-align: left;
 }
+.font-italic {
+    font-style: italic;
+}
+.font-underline {
+    text-decoration: underline;
+}
+.font-uppercase {
+    text-transform: uppercase;
+}
