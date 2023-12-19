@@ -1,20 +1,881 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TEMPLATE</title>
+  <title>WEBSITE BUILDER</title>
   <link href="./styles.css" type="text/css" rel="stylesheet">
+  <link href="./builder.css" type="text/css" rel="stylesheet">
   <link href="./colors.css" type="text/css" rel="stylesheet">
   <link href="./fonts.css" type="text/css" rel="stylesheet">
   <link href="./otherselectors.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="bg393636">
-            <div class="top-head bgblack">
-                <div class="top-logo clrwhite montserrat font-weight-700"> Website Template
+        
+        <div class="builder-banner">
+            <div class="oswald font-size-100 clrred">WEBSITE BUILDER</div> 
+            <div class="websitesub ephesis font-size-60 clrantiquewhite">design system</div> 
+        </div>
+        <nav class="nav-links text-left bgblack">
+            <ul class="breadcrumb2">
+                <li class="oswald font-uppercase font-weight-600 margin10 ">Website builder</li>
+                <li><a href="#how-to-use" ><span class="font-italic">How to use</span> </a></li>
+                <li><a href="#fonts-link" ><span class="font-italic">Fonts</span></a></li>
+                <li><a href="#colors-link" ><span class="font-italic">Colors</span></a></li>
+                <li><a href="#flex-box-link" ><span class="font-italic">Flex-box</span></a></li>
+                <li><a href="#sizing-columns" ><span class="font-italic">Sizing and Columns</span></a></li>
+                <li><a href="#buttons-breadcrumbs" ><span class="font-italic">Buttons and Breadcrumbs</span></a></li>
+                <li><a href="#template" ><span class="font-italic">Using the Template</span></a></li>
+            </ul>
+            
+        </nav>
+    </header>
+   <div class="html-colors" id="how-to-use">
+        <div class="mainheader bgblack clrwhite poppins font-size-40">How to use</div>
+        <div class="box2 bg393636 clrwhite poppins font-size-20">
+            <p class="margin10">This website contains a variety of selectors assigned to a specific <span class="font-underline"> color of background, text, border</span>, as well as <span class="font-underline"> font type, weight, size, style and alignment</span>. You can <span class="font-italic"> add or replace </span> any of the selector(s) below to any tag in HTML that you like.</p>
+            <p class="margin10"><span class="merriweather font-size-30">FONT EXAMPLE</span> &lt;span class="<span class="code">abril</span> <span class="code">font-size-30</span> <span class="code">font-weight-400</span>"&gt;  </p>
+            <p class="margin10"><span class="merriweather font-size-30">OUTPUT</span> <span class="abril font-size-30 font-weight-700 bgwhite clrblack" >This is the example of Abril Fatface font, size 30px, with 700 boldness</span></p>
+            <p class="margin10"><span class="merriweather font-size-30">COLOR EXAMPLE</span> &lt;span class="<span class="code">clryellow</span> <span class="code">bgred</span> <span class="code">borderblack</span>"&gt;  </p>
+            <p class="margin10"><span class="merriweather font-size-30">OUTPUT</span> <span class="clryellow bgred borderblack color-box" >This is the example of yellow text, red background, black border
+            </span></p>
+            <p class="margin10">Check out the <a href="./template.html" target="_blank" > TEMPLATE</a></span> before you see the breakdown of the selector uses at the bottom of this page. </p>
+            <p class="margin10">If you wish to use the selectors of the CSS on any other HTML page be sure to copy the font.css and colors.css in the folder with your own web page and don't forget to link them in the head of your HTML.</p>
+            <p class="margin10">Have fun and enjoy coding!</p>
+            
+        </div>
+
+        <!-- Fonts -->
+        <div class="box bgrgbwhite" id="fonts-link">
+            <div class="boxhead bgbrown font-size-30">fonts</div>
+            <div class="contents">
+                <table>
+                    <thead>
+                        <th class="bgblack">font name</th>
+                        <th class="bgblack">selector name</th>
+                        <th class="bgblack">example</th>
+                    </thead>
+                    <tbody>
+                        <tr class="pattern1">
+                            <td>Abril Fatface</td>
+                            <td>class="<span class="code">abril</span>"</td>
+                            <td class="abril font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td>Ephesis</td>
+                            <td>class="<span class="code">ephesis</span>"</td>
+                            <td class="ephesis font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td>Kanit</td>
+                            <td>class="<span class="code">kanit</span>"</td>
+                            <td class="kanit font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td>Merriweather</td>
+                            <td>class="<span class="code">merriweather</span>"</td>
+                            <td class="merriweather font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td>Montserrat</td>
+                            <td>class="<span class="code">montserrat</span>"</td>
+                            <td class="montserrat font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td>Nova Square</td>
+                            <td>class="<span class="code">nova</span>"</td>
+                            <td class="nova font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        
+                        <tr class="pattern1">
+                            <td>Oswald</td>
+                            <td>class="<span class="code">oswald</span>"</td>
+                            <td class="oswald font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td>Poppins</td>
+                            <td>class="<span class="code">poppins</span>"</td>
+                            <td class="poppins font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td>Roboto</td>
+                            <td>class="<span class="code">roboto</span>"</td>
+                            <td class="roboto font-size-20">The quick brown fox jumps over the lazy dog</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                <div class="external-link"><a href="https://fonts.google.com/share?selection.family=Abril+Fatface|Ephesis|Kanit:wght@300|Merriweather:ital@0;1|Montserrat:wght@400;600|Nova+Square|Oswald:wght@200|Poppins:wght@200|Roboto:wght@300;400" target="_blank">Click here for the google list</a></div>
+                <div  class="flex-columns-justification">
+                    <div class="column50per margin10 justify-normal">
+                        <table>
+                            <thead>
+                                <th>Font Size</th>
+                                <th>Selector</th>
+                                <th>Example</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>20</td>
+                                    <td>class="<span class="code">font-size-20</span>"</td>
+                                    <td class="font-size-20">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>30</td>
+                                    <td>class="<span class="code">font-size-30</span>"</td>
+                                    <td class="font-size-30">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>40</td>
+                                    <td>class="<span class="code">font-size-40</span>"</td>
+                                    <td class="font-size-40">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>50</td>
+                                    <td>class="<span class="code">font-size-50</span>"</td>
+                                    <td class="font-size-50">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>60</td>
+                                    <td>class="<span class="code">font-size-60</span>"</td>
+                                    <td class="font-size-60">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>70</td>
+                                    <td>class="<span class="code">font-size-70</span>"</td>
+                                    <td class="font-size-70">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>80</td>
+                                    <td>class="<span class="code">font-size-80</span>"</td>
+                                    <td class="font-size-80">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>90</td>
+                                    <td>class="<span class="code">font-size-90</span>"</td>
+                                    <td class="font-size-90">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>100</td>
+                                    <td>class="<span class="code">font-size-100</span>"</td>
+                                    <td class="font-size-100">TEXT</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column50per justify-normal">
+                        <table>
+                            <thead>
+                                <th>Font Weight</th>
+                                <th>Selector</th>
+                                <th>Example</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>400</td>
+                                    <td>class="<span class="code">font-weight-400</span>"</td>
+                                    <td class="font-weight-400 font-size-30">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>500</td>
+                                    <td>class="<span class="code">font-weight-500</span>"</td>
+                                    <td class="font-weight-500 font-size-30">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>600</td>
+                                    <td>class="<span class="code">font-weight-600</span>"</td>
+                                    <td class="font-weight-600 font-size-30">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>700</td>
+                                    <td>class="<span class="code">font-weight-700</span>"</td>
+                                    <td class="font-weight-700 font-size-30">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>800</td>
+                                    <td>class="<span class="code">font-weight-800</span>"</td>
+                                    <td class="font-weight-800 font-size-30">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>900</td>
+                                    <td>class="<span class="code">font-weight-900</span>"</td>
+                                    <td class="font-weight-900 font-size-30">TEXT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <thead>
+                                <th>Text Position</th>
+                                <th>Selector</th>
+                                <th>Example</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>Left</td>
+                                    <td>class="<span class="code">text-left</span>"</td>
+                                    <td class="text-left">TEXT</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>Center</td>
+                                    <td>class="<span class="code">text-center</span>"</td>
+                                    <td class="text-center">TEXT</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>Right</td>
+                                    <td>class="<span class="code">text-right</span>"</td>
+                                    <td class="text-right">TEXT</td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <thead>
+                                <th>Text Style</th>
+                                <th>Selector</th>
+                                <th>Example</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>Italic</td>
+                                    <td>class="<span class="code">font-italic</span>"</td>
+                                    <td class="font-italic">text</td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>Underline</td>
+                                    <td>class="<span class="code">font-underline</span>"</td>
+                                    <td class="font-underline">text</td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>Upper Case Letters</td>
+                                    <td>class="<span class="code">font-uppercase</span>"</td>
+                                    <td class="font-uppercase">text</td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="top-links"> 
-                    <ul>
+            </div>
+
+        </div>
+
+        <!-- Colors -->
+        <div class="box bgrgbwhite" id="colors-link">
+            <div class="boxhead bgbrown font-size-30">Colors</div>
+            <div class="contents">
+
+                <table>
+                    <thead>
+                        <th class="bgblack">Color</th>
+                        <th class="bgblack">Foreground selector</th>
+                        <th class="bgblack">Background selector</th>
+                        <th class="bgblack">Border Selector</th>
+                    </thead>
+                    <tbody>
+                        <tr class="pattern1">
+                            <td class="bgwhite clrblack">White #fff</td>
+                            <td>class="<span class="code">clrwhite</span>"</td>
+                            <td>class="<span class="code">bgwhite</span>"</td>
+                            <td>class="<span class="code">borderwhite</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bgbeige clrblack">Beige</td>
+                            <td>class="<span class="code">clrbeige</span>"</td>
+                            <td>class="<span class="code">bgbeige</span>"</td>
+                            <td>class="<span class="code">borderbeige</span>"</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td class="bgblack clrwhite">Black #000</td>
+                            <td>class="<span class="code">clrblack</span>"</td>
+                            <td>class="<span class="code">bgblack</span>"</td>
+                            <td>class="<span class="code">borderblack</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bg333 clrwhite">Grey #333</td>
+                            <td>class="<span class="code">clr333</span>"</td>
+                            <td>class="<span class="code">bg333</span>"</td>
+                            <td>class="<span class="code">border333</span>"</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td class="bg393636 clrwhite">#393636</td>
+                            <td>class="<span class="code">clr393636</span>"</td>
+                            <td>class="<span class="code">bg393636</span>"</td>
+                            <td>class="<span class="code">border393636</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bg4a4a4a clrwhite">#4A4A4A</td>
+                            <td>class="<span class="code">clr4a4a4a</span>"</td>
+                            <td>class="<span class="code">bg4a4a4a</span>"</td>
+                            <td>class="<span class="code">border4a4a4a</span>"</td>
+                        </tr>
+
+                        <tr class="pattern1">
+                            <td class="bg565050 clrwhite">#565050</td>
+                            <td>class="<span class="code">clr565050</span>"</td>
+                            <td>class="<span class="code">bg565050</span>"</td>
+                            <td>class="<span class="code">border565050</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bg666 clrwhite">Grey #666</td>
+                            <td>class="<span class="code">clr666</span>"</td>
+                            <td>class="<span class="code">bg666</span>"</td>
+                            <td>class="<span class="code">border666</span>"</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td class="bg717171 clrwhite">#717171</td>
+                            <td>class="<span class="code">clr717171</span>"</td>
+                            <td>class="<span class="code">bg717171</span>"</td>
+                            <td>class="<span class="code">border717171</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bg999 clrwhite">Grey #999</td>
+                            <td>class="<span class="code">clr999</span>"</td>
+                            <td>class="<span class="code">bg999</span>"</td>
+                            <td>class="<span class="code">border999</span>"</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td class="bgred clrblack">red</td>
+                            <td>class="<span class="code">clrred</span>"</td>
+                            <td>class="<span class="code">bgred</span>"</td>
+                            <td>class="<span class="code">borderred</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bgyellow clrblack">yellow</td>
+                            <td>class="<span class="code">clryellow</span>"</td>
+                            <td>class="<span class="code">bgyellow</span>"</td>
+                            <td>class="<span class="code">borderyellow</span>"</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td class="bgrgbwhite clrblack">White/grey rgb(228, 213, 213)</td>
+                            <td>class="<span class="code">clrrgbwhite</span>"</td>
+                            <td>class="<span class="code">bgrgbwhite</span>"</td>
+                            <td>class="<span class="code">borderrgbwhite</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bgrgblbrown clrwhite">Light Brown rgb(87, 72, 72)</td>
+                            <td>class="<span class="code">clrrgblbrown</span>"</td>
+                            <td>class="<span class="code">bgrgblbrown</span>"</td>
+                            <td>class="<span class="code">borderrgblbrown</span>"</td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td class="bgbrown clrwhite">Brown rgb(53, 49, 49)</td>
+                            <td>class="<span class="code">clrbrown</span>"</td>
+                            <td>class="<span class="code">bgbrown</span>"</td>
+                            <td>class="<span class="code">borderbrown</span>"</td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td class="bgantiquewhite clrblack">Antique White</td>
+                            <td>class="<span class="code">clrantiquewhite</span>"</td>
+                            <td>class="<span class="code">bgantiquewhite</span>"</td>
+                            <td>class="<span class="code">borderantiquewhite</span>"</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+                <ul class="colorbox">
+                    <li class="bgwhite clrblack">White #fff</li>
+                    <li class="bgbeige clrblack">Beige </li>
+                    <li class="bgblack clrwhite">Black #000</li>
+                    <li class="bg333 clrwhite">Grey #333</li>
+                    <li class="bg393636 clrwhite">#393636</li>
+                    <li class="bg4a4a4a clrwhite">#4A4A4A</li>
+                    <li class="bg565050 clrwhite">#565050</li>
+                    <li class="bg666 clrwhite">Grey #666</li>
+                    <li class="bg717171 clrwhite">#717171</li>
+                    <li class="bg999 clrwhite">Grey #999</li>
+                    <li class="bgred clrblack">red</li>
+                    <li class="bgyellow clrblack">yellow</li>
+                    <li class="bgrgbwhite clrblack borderblack">White/grey rgb(228, 213, 213)</li>
+                    <li class="bgrgblbrown clrblack">Light Brown rgb(87, 72, 72)</li>
+                    <li class="bgbrown clrwhite">Brown rgb(53, 49, 49)</li>
+                    <li class="bgantiquewhite clrblack">Antique White</li>
+                </ul>
+                <div class="external-link"><a href="./color-intersection.html" target="_blank">Click here for color intersection table</a></div>
+            </div>
+        </div>
+
+        <!-- Flexbox -->
+        <div class="box bgrgbwhite" id="flex-box-link">
+            <div class="boxhead bgbrown font-size-30">Flex-box</div>
+            <div class="contents">
+                <div class="flex-columns-justification">
+                    <div class="column50per justify-normal">
+                        <!--No Flex-->
+                        <table>
+                            <thead>
+                                <th colspan="2">No Flex</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>Class doesn't have any properties</td>
+                                    <td>
+                                        <div class="parent-box bg333">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!--Flex Justification + justify-right-->
+                        <table>
+                            <thead>
+                                <th colspan="2">Flex Justification + justify-right</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">flex-columns-justification justify-right</span>"</td>
+                                    <td>
+                                        <div class="parent-box bg333 flex-columns-justification justify-right">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!--Flex Justification + flex-direction-col-->
+                        <table>
+                            <thead>
+                                <th colspan="2">Flex Justification + flex-direction-col</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">flex-columns-justification flex-direction-col</span>"</td>
+                                    <td>
+                                        <div class="parent-box bg333 flex-columns-justification flex-direction-col">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!--Flex Justification +  flex-direction-col + flex-align-items-center-->
+                        <table>
+                            <thead>
+                                <th colspan="2">Flex Justification +  flex-direction-col + flex-align-items-center</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">flex-columns-justification flex-direction-col flex-align-items-center</span>"</td>
+                                    <td>
+                                        <div class="parent-box bg333 flex-columns-justification flex-direction-col flex-align-items-center">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!--Flex Justification +  flex-align-items-center-->
+                        <table>
+                            <thead>
+                                <th colspan="2">Flex Justification +  flex-align-items-center</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">flex-columns-justification flex-align-items-center</span>"</td>
+                                    <td>
+                                        <div class="parent-box bg333 flex-columns-justification flex-align-items-center">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column50per justify-normal">
+                        <!--Flex Justification-->
+                        <table>
+                            <thead>
+                                <th colspan="2">Flex Justification</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">flex-columns-justification</span>"</td>
+                                    <td>
+                                        <div class="parent-box bg333 flex-columns-justification">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!--Flex Justification + justify-normal-->
+                        <table>
+                            <thead>
+                                <th colspan="2">Flex Justification + justify-normal</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">flex-columns-justification justify-normal</span>"</td>
+                                    <td>
+                                        <div class="parent-box bg333 flex-columns-justification justify-normal">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!--Flex Justification + flex-direction-col + flex-align-items-end-->
+                        <table>
+                            <thead>
+                                <th colspan="2">Flex Justification + flex-direction-col + flex-align-items-end</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">flex-columns-justification flex-direction-col flex-align-items-end</span>"</td>
+                                    <td>
+                                        <div class="parent-box bg333 flex-columns-justification flex-direction-col flex-align-items-end">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--Flex Justification +  flex-align-items-end-->
+                        <table>
+                            <thead>
+                                <th colspan="2">Flex Justification +  flex-align-items-end</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">flex-columns-justification flex-align-items-end</span>"</td>
+                                    <td>
+                                        <div class="parent-box bg333 flex-columns-justification flex-align-items-end">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sizing and Columns -->
+        <div class="box bgrgbwhite" id="sizing-columns">
+            <div class="boxhead bgbrown font-size-30">Sizing and Columns</div>
+            <div class="contents">
+                <div class="flex-columns-justification">
+                    <div class="column50per justify-normal">
+
+                        <!--Margin 10 20 30-->
+
+                        <table>
+                            <thead>
+                                <th colspan="2">Margin 10 20 30</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">margin10</span>"</td>
+                                    <td>
+                                        <div class="parent-box bg333 flex-columns-justification flex-align-items-center">
+                                            <div class="smallbox1 borderred bg717171 margin10"></div>
+                                            <div class="smallbox2 borderred bg565050 margin10"></div>
+                                            <div class="smallbox3 borderred bg999 margin10"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>class="<span class="code">margin20</span>"</td>
+                                    <td>
+                                        <div class="parent-box bg333 flex-columns-justification flex-align-items-center">
+                                            <div class="smallbox1 borderred bg717171 margin20"></div>
+                                            <div class="smallbox2 borderred bg565050 margin20"></div>
+                                            <div class="smallbox3 borderred bg999 margin20"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">margin30</span>"</td>
+                                    <td>
+                                        <div class="parent-box bg333 flex-columns-justification flex-align-items-center">
+                                            <div class="smallbox1 borderred bg717171 margin30"></div>
+                                            <div class="smallbox2 borderred bg565050 margin30"></div>
+                                            <div class="smallbox3 borderred bg999 margin30"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>class="<span class="code">margin50</span>"</td>
+                                    <td>
+                                        <div class="parent-box bg333 flex-columns-justification flex-align-items-center">
+                                            <div class="smallbox1 borderred bg717171 margin50"></div>
+                                            <div class="smallbox2 borderred bg565050 margin50"></div>
+                                            <div class="smallbox3 borderred bg999 margin50"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column50per justify-normal">
+
+                        <!--Column 33% 50% flex-->
+
+                        <table>
+                            <thead>
+                                <th colspan="2">Column 33% 50% flex</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>div class="<span class="code">column33per </span>"<br>
+                                        div class="<span class="code">column33per </span>"<br>
+                                        div class="<span class="code">column33per </span>"
+                                    </td>
+                                    <td>
+                                        <div class="parent-box bg333 column33per borderblack flex-float-left">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                        <div class="parent-box bg333 column33per flex-float-left borderblack">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                        <div class="parent-box bg333 column33per flex-float-left borderblack">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>class="<span class="code">column50per</span>"<br>
+                                        class="<span class="code">column50per</span>"
+                                    </td>
+                                    <td>
+                                        <div class="parent-box column50per bg4a4a4a flex-float-left borderblack">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                        <div class="parent-box column50per bg4a4a4a flex-float-left borderblack">
+                                            <div class="smallbox1 borderred bg717171"></div>
+                                            <div class="smallbox2 borderred bg565050"></div>
+                                            <div class="smallbox3 borderred bg999"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">flex-columns</span>"<br>
+                                        ul class="<span class="code">flex-columns-justification</span>"<br>
+                                        li class="<span class="code">column-list</span>"<br>
+                                        li class="<span class="code">column-list</span>"
+                                    </td>
+                                    <td><div class="parent-box bg333 flex-columns">
+                                        <ul class="flex-columns-justification">
+                                            <li class="column-list">
+                                                <div class="smallbox1 borderred bg717171"></div>
+                                                <div class="smallbox2 borderred bg565050"></div>
+                                                <div class="smallbox3 borderred bg999"></div>
+                                            </li>
+                                            <li class="column-list">
+                                                <div class="smallbox1 borderred bg717171"></div>
+                                                <div class="smallbox2 borderred bg565050"></div>
+                                                <div class="smallbox3 borderred bg999"></div>
+                                            </li>
+                                            
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <table>
+                    <thead>
+                        <th colspan="2">Width 150 200 250</th>
+                    </thead>
+                    <tbody>
+                        <tr class="pattern1">
+                            <td>class="<span class="code">width150</span>"</td>
+                            <td>
+                                <div class="bg333 flex-columns-justification flex-align-items-center">
+                                    <div class="smallbox1 borderred bg717171 width150"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="pattern2">
+                            <td>class="<span class="code">width200</span>"</td>
+                            <td>
+                                <div class="bg333 flex-columns-justification flex-align-items-center">
+                                    <div class="smallbox2 borderred bg565050 width200"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="pattern1">
+                            <td>class="<span class="code">width250</span>"</td>
+                            <td>
+                                <div class="bg333 flex-columns-justification flex-align-items-center">
+                                    <div class="smallbox3 borderred bg999 width250"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Buttons and breadcrumbs -->
+        <div class="box bgrgbwhite" id="buttons-breadcrumbs">
+            <div class="boxhead bgbrown font-size-30">Buttons and Breadcrumbs</div>
+            <div class="contents">
+                <div class="flex-columns-justification">
+                    <div class="column50per justify-normal">
+
+                        <!--Buttons-->
+
+                        <table>
+                            <thead>
+                                <th colspan="2">Flat and skeuomorphic buttons</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">button1</span>"</td>
+                                    <td>
+                                        <div class="flex-columns-justification flex-align-items-center">   
+                                            <div class="button1 bgred borderbrown"><a class="clrwhite" href="#">Click Here</a></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>class="<span class="code">button2</span> bgred borderbrown"</td>
+                                    <td>
+                                        <div class="flex-columns-justification flex-align-items-center">                            <div class="button2"><a href="#">Click Here</a>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>class="<span class="code">external-link</span>"</td>
+                                    <td>
+                                        <div class="flex-columns-justification flex-align-items-center">                            <div class="external-link"><a href="#">Click here</a></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column50per justify-normal">
+
+                        <!--Breadcrumbs-->
+
+                        <table>
+                            <thead>
+                                <th colspan="2">Breadcrumbs</th>
+                            </thead>
+                            <tbody>
+                                <tr class="pattern1">
+                                    <td>ul <br>
+                                        li class="<span class="code">breadcrumb </span>"<br>
+                                        li class="<span class="code">breadcrumb </span>"<br>
+                                        li class="<span class="code">breadcrumb </span>"
+                                    </td>
+                                    <td>
+                                        <div class="flex-columns-justification flex-align-items-center">
+                                            <ul class="breadcrumb">
+                                                <li><a href="#">link</a></li>
+                                                <li><a href="#">link</a></li>
+                                                <li><a href="#">link</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="pattern2">
+                                    <td>ul class="<span class="code">breadcrumb2 </span>"
+                                    </td>
+                                    <td>
+                                        <div class="flex-columns-justification flex-align-items-center">
+                                            <ul class="breadcrumb2">
+                                                <li><a href="#"><span class="font-italic">link</span> </a></li>
+                                                <li><a href="#"><span class="font-italic">link</span> </a></li>
+                                                <li><a href="#"><span class="font-italic">link</span> </a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="pattern1">
+                                    <td>ul class="<span class="code">breadcrumb3 </span>"
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <ul class="breadcrumb3">
+                                                <li><a href="#" class=" clrwhite">link</a></li>
+                                                <li><a href="#" class=" clrwhite">link</a></li>
+                                                <li><a href="#" class=" clrwhite">link</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <div class="mid-div-header" id="template">
+        <div class="mainheader bgblack clrwhite poppins font-size-40">Using the template</div>
+        <div class="yellow-line-up-begins">
+            <img src="./source/yellow-arrow.png" />
+            <img src="./source/yellow-arrow.png" />
+            <img src="./source/yellow-arrow.png" />
+            TEMPLATE STARTS HERE
+            <img src="./source/yellow-arrow.png" />
+            <img src="./source/yellow-arrow.png" />
+            <img src="./source/yellow-arrow.png" />
+        </div>
+            <div class="bg393636">
+                <div class="top-head bgblack">
+                    <div class="top-logo clrwhite montserrat font-weight-700"> Website Template
+                    </div>
+                    <div class="top-links"> 
+                        <ul>
+                            <li><a href="#">link1</a></li>
+                            <li><a href="#">link2</a></li>
+                            <li><a href="#">link3</a></li>
+                            <li><a href="#">link4</a></li>
+                            <li><a href="#">link5</a></li>
+                            <li><a href="#">link6</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mid-head">
+                    <ul class="mid-head-links">
                         <li><a href="#">link1</a></li>
                         <li><a href="#">link2</a></li>
                         <li><a href="#">link3</a></li>
@@ -23,105 +884,224 @@
                         <li><a href="#">link6</a></li>
                     </ul>
                 </div>
+                <div class="bgwhite">
+                    <ul class="bottom-head-links">
+                       <li class="breadcrumb"><a href="#" >Home</a></li>
+                       <li class="breadcrumb"><a href="#" >step 1</a></li>
+                       <li class="breadcrumb"><a href="#" >step 2</a></li>
+                       <li class="breadcrumb"><a href="#" >step 3</a></li>
+                        <li class="breadcrumb"><a href="#" >step 4</a></li>
+                     </ul>
+                </div>
+            </nav>
+            <div  id="backtop" class="banner borderblack clrblack">
+                <div class="banner-head poppins font-size-30">DESIGN INDUSTRY</div> 
+                <div class="banner-mid"><h1 class="text-right">PRODUCTS</h1> </div> 
+                <div class="banner-bottom1">
+                    <p>We provide the best service that it can be</p>
+                </div> 
+                <div class="banner-bottom2">
+                    <p>Satisfation guaranteed</p>
+                </div> 
             </div>
-            <div class="mid-head">
-                <ul class="mid-head-links">
-                    <li><a href="#">link1</a></li>
-                    <li><a href="#">link2</a></li>
-                    <li><a href="#">link3</a></li>
-                    <li><a href="#">link4</a></li>
-                    <li><a href="#">link5</a></li>
-                    <li><a href="#">link6</a></li>
-                </ul>
+            <div class="yellow-line-up-end">
+                <img src="./source/yellow-arrow.png" />
+                <img src="./source/yellow-arrow.png" />
+                <img src="./source/yellow-arrow.png" />
+                TEMPLATE ENDS HERE
+                <img src="./source/yellow-arrow.png" />
+                <img src="./source/yellow-arrow.png" />
+                <img src="./source/yellow-arrow.png" />
             </div>
-            <div class="bgwhite">
-                <ul class="bottom-head-links">
-                   <li class="breadcrumb"><a href="#" >Home</a></li>
-                   <li class="breadcrumb"><a href="#" >step 1</a></li>
-                   <li class="breadcrumb"><a href="#" >step 2</a></li>
-                   <li class="breadcrumb"><a href="#" >step 3</a></li>
-                    <li class="breadcrumb"><a href="#" >step 4</a></li>
-                 </ul>
-            </div>
-        </nav>
-        <div  id="backtop" class="banner borderblack">
-            <div class="banner-head poppins font-size-30 font-uppercase">Design Industry</div> 
-            <div class="banner-mid"><h1 class="text-right font-uppercase">Products</h1> </div> 
-            <div class="banner-bottom1">
-                <p>We provide the best service that it can be</p>
-            </div> 
-            <div class="banner-bottom2">
-                <p>Satisfation guaranteed</p>
-            </div> 
         </div>
-    </header>
-    <main>
-        <article class="article-1">
-            <section class="section-col-1">
-                <h2 class="none">Types of service</h2>
-                <div class="flex-columns">
-                    <ul class="flex-columns-justification">
-                        <li class="column-list border4a4a4a"><a href="#"><img src="./source/image1.jpg" /> 
-                            <h3 class="clrblack font-weight-400">Web Design</h3>
-                        </a></li>
-                        <li class="column-list border4a4a4a"><a href="#"><img src="./source/image2.jpg" /> 
-                            <h3 class="clrblack font-weight-400">Hosting</h3>
-                        </a></li>
-                        <li class="column-list border4a4a4a"><a href="#"><img src="./source/images.png" /> 
-                            <h3 class="clrblack font-weight-400">Database Design</h3>
-                        </a></li>
-                    </ul>
-                </div>
-            </section>
-        </article>
-        <article class="article-1 bgbeige">
-            <section class="section-col-1">
-                <h2 class="none">Check out full template</h2>
-                <a class="full-wide-page" href="http://liquigy.github.io/websystem" target="_blank">
-                    <div class="embed-img-video"></div>
-                </a>
-            </section>
-        </article>
-        <article class="article-1 bgwhite borderbeige">
-            <section class="flex-columns-justification">
-                <div class="column50per margin10">
-                    <h3 class="none"> Option 1</h3>
-                    <p class="text-center margin10">Navigate the web using our new buttons</p>
-                    <div class="button1 bgred borderbrown"><a class="clrwhite" href="#">Learn More</a></div>
-                </div>
-                <div class="column50per margin10">
-                    <h3 class="none">Option 2</h3>
-                    <p class="text-center margin10">Navigate the web using our new buttons</p>
-                    <div class="button2"><a href="#">Learn More</a></div>
-                </div>
-            </section>
-        </article>
-        <article class="article-1 bgwhite borderbeige">
-            <section>
-                <h2 class="none">Why choose our expert service?</h2>
-                <p class="text-center" >Our innovative solutions will play the pivoting role in your buisness. Our expertise will be helpful to build your future clientelle.</p>
-            </section>
-            <section class="flex-columns-justification">
-                <div class="column33per margin50">
-                    <img src="./source/image1.jpg" />
-                    <h3 class="font-weight-400">Putting you first</h3>
-                    <p>You are our top priority and the reason we do what we do. We’re here for you, 24/7 to make sure you’re taken care of in every way we’ve promised and to your total satisfaction.</p>
-                </div>
-                <div class="column33per margin50">
-                    <img src="./source/image2.jpg" />
-                    <h3 class="font-weight-400">Protection from A to Z.</h3>
-                    <p>We will make sure you’re ready to live all of life’s important moments, worry-free..</p>
-                </div>
-                <div class="column33per margin50">
-                    <img src="./source/images.png" />
-                    <h3 class="font-weight-400">A brand you can trust.</h3>
-                    <p>Taking care of Members is what we’ve done for over many years. That’s why we make our service easy by offering you the right solutions that are tailored to meet your individual needs, every time.</p>
-                </div>
-            </section>
-        </article>
-    </main>
+        <div class="flex-columns-justification bg393636 clrwhite poppins font-size-20 justify-normal">
+            <table class="bgnone min-width860">
+                <thead>
+                    <th class="bgnone ephesis font-size-40 width250">Tag/Selector</th>
+                    <th class="bgnone ephesis font-size-40 width200">Font </th>
+                    <th class="bgnone ephesis font-size-40 width200">Text Color</th>
+                    <th class="bgnone ephesis font-size-40 width200">Background</th>
+                    <th class="bgnone ephesis font-size-40 width200">Other</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;nav class="<span class="code">bg393636</span>" &gt;</p>
+                            <p class="margin10 font-italic">(NAV element above banner)</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Helvetica, Arial, sans-serif <span class="font-italic" >(default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Black <span class="font-italic" >(default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="colorbox borderwhite bg393636">bg393636</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">N/A</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="top-head <span class="code">bgblack</span>" &gt;</p>
+                            <p class="margin10 font-italic">(TOP-HEAD element in NAV)</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Helvetica, Arial, sans-serif <span class="font-italic" >(default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Black <span class="font-italic" >(default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="colorbox borderwhite bgblack">bgblack</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">N/A</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="top-logo <span class="code">clrwhite montserrat font-weight-700</span> "&gt;</p>
+                            <p class="margin10 font-italic">(LOGO element in TOP-HEAD element)</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="montserrat">Montserrat</span></p></td>
+                        <td class="text-center" > 
+                            <p class="margin10"><span class="colorbox borderblack bgwhite clrblack">white</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Black <span class="font-italic" >(inherited from TOP-HEAD)</span></p></td>
+                        <td class="text-center" >
+                            <p class="margin10 font-weight-700">font-weight-700</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="mid-head" &gt;</p>
+                            <p class="margin10 font-italic">(MID-HEAD element in NAV)</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Helvetica, Arial, sans-serif <span class="font-italic" >(default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">White <span class="font-italic" >(inherited from MID-HEAD-LINKS A)</span></p></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">bg393636 <span class="font-italic" >(inherited from NAV)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">N/A</p>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="<span class="code">bgwhite</span>" &gt;</p>
+                            <p class="font-italic">BOTTOM-HEAD of NAV. Contains breadcrumbs</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Helvetica, Arial, sans-serif <span class="font-italic" >(default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="font-italic" >(Change in breadcrumbs CSS settings)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="colorbox borderblack bgwhite clrblack">white</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">N/A</p>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="banner <span class="code">borderblack</span>" &gt;</p>
+                            <p class="font-italic">BANNER element below NAV. Contains background image, H1 and P elements</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Helvetica, Arial, sans-serif <span class="font-italic" >(default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Black <span class="font-italic" >(default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><a href="./source/Banner1.png" target="_blank" class="clrwhite font-underline">Background Image</a> and White background color<span class="font-italic" > (default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="colorbox borderwhite bgblack">borderblack</span></p>
+                            <p class="margin10"><span class="text-right">text-right</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="banner <span class="code">banner-head poppins font-size-30</span>" &gt;</p>
+                            <p class="font-italic">TOP element in BANNER</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10 poppins">Poppins</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Black <span class="font-italic" > (default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><a href="./source/Banner1.png" target="_blank" class="clrwhite font-underline">Background Image</a> and White background color<span class="font-italic" > (Inherited by BANNER)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="font-size-30">font-size-30</span></p>
+                            <p class="margin10"><span class="font-uppercase">font-uppercase</span></p>
+                            <p class="margin10"><span class="text-right">text-right</span><span class="font-italic" > (Inherited by BANNER)</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="banner-mid" &gt;</p>
+                            <p>&lt;h1 class="banner <span class="code">text-right font-uppercase</span>" &gt;</p>
+                            <p class="font-italic">MID element in BANNER</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Helvetica, Arial, sans-serif <span class="font-italic" > (default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Black <span class="font-italic" >(default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><a href="./source/Banner1.png" target="_blank" class="clrwhite font-underline">Background Image</a> and White background color<span class="font-italic" > (Inherited by BANNER)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">font size 70px <span class="font-italic" >(Inherited by H1)</span></p>
+                            <p class="margin10"><span class="font-uppercase">font-uppercase</span></p>
+                            <p class="margin10"><span class="text-right">text-right</span><span class="font-italic" > (Inherited by BANNER)</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="margin10">&lt;div class="banner-bottom1" &gt; &lt;p&gt;</p>
+                            <p>&lt;div class="banner-bottom2" &gt; &lt;p&gt;</p>
+                            <p class="font-italic">MID element in BANNER</p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Helvetica, Arial, sans-serif <span class="font-italic" > (default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10">Black <span class="font-italic" > (default)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><a href="./source/Banner1.png" target="_blank" class="clrwhite font-underline">Background Image</a> and White background color<span class="font-italic" > (Inherited by BANNER)</span></p>
+                        </td>
+                        <td class="text-center" >
+                            <p class="margin10"><span class="text-right">text-right</span><span class="font-italic" > (Inherited by BANNER)</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+    </div>
     <footer> 
-        <div class="footer-1 bgbeige borderwhite">  
+        <div class="footer-2 bgbeige borderwhite">  
             <ul>
                 <li class="footer-back-to-top" ><a class="clrbrown" href="#backtop">^ Back to top ^</a></li>
                 <li class="borderwhite black-rec">
@@ -139,7 +1119,7 @@
                             <a href="https://liquigy.github.io/websystem" target="_blank">
                                 <div class="dv-work2 borderblack"></div>
                             </a>
-                            <a href="https://liquigy.github.io/webdesign-system/template.html" target="_blank">
+                            <a href="https://liquigy.github.io/websystem/template.html" target="_blank">
                                 <div class="dv-work3 borderblack"></div>
                             </a>
                         </div>
@@ -148,7 +1128,8 @@
                 
             </ul>
         </div>
-        <div class="footer-1 bgwhite">
+
+        <div class="footer-2 bgwhite">
                 <div class="footer-social">
 
                     <a href="https://www.facebook.com/" target="_blank" class="footer__social-link footer__social-link--facebook ">
