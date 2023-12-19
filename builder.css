@@ -4,6 +4,13 @@ body {
     color: beige;
     background-color: #393636;
 }
+.nav-links li {
+    display: inline-flex;
+}
+
+.nav-text {
+    transform: skew(21deg);
+}
 .color-box {
     margin: 5px;
     border-radius: 5px;
@@ -60,28 +67,36 @@ body {
 .box2 {
     padding: 35px;
 }
+.box2 a {
+    color: white;
+    text-decoration: underline;
+}
+.box2 a:hover {
+    
+    background-color: beige;
+    color: #000;
+}
 .boxhead {
     text-align: center;
     min-width: 800px;
 }
-.external-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
+.parent-box {
+    width: 250px;
+    height: 250px;
 }
-.external-link a {
-    text-decoration: none;
-    display: flex;
-    padding: 20px;
-    border: 1px solid #000;
-    border-radius: 10px;
+.smallbox1 {
+    width: 50px;
+    height: 50px;
 }
-.external-link a:hover{
-    text-decoration: underline;
-    color: white;
-    background-color: #393636;
+.smallbox2 {
+    width: 75px;
+    height: 50px;
 }
+.smallbox3 {
+    width: 50px;
+    height: 75px;
+}
+
 .table-colors {
     max-width: 1060px;
     overflow-x: scroll;
