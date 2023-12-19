@@ -5,10 +5,21 @@
 .pattern2 {
     background-color: #333;
 }
-.flex-columns-justification {
+.flex-columns {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.flex-columns ul, .flex-columns-justification {
     display: flex;
     justify-content: center;
 }
+.flex-columns li {
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+}
+
 .justify-normal {
     justify-content: normal !important;
     
@@ -42,16 +53,7 @@
     align-items: center;
     justify-content: center;
 }
-.flex-columns {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
-.column-list {
-    text-align: center;
-    padding: 10px;
-    list-style: none;
-}
+
 .flex-float-left {
     float: left;
 }
